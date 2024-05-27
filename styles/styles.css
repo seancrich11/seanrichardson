@@ -19,7 +19,7 @@ body {
 }
 
 .title-card h1 {
-    padding: 20px 4rem;
+    padding: 20px 5rem;
     margin: 0px;
     color: #fa9e64;
     border-bottom: 2px solid #fa9e64;
@@ -34,19 +34,19 @@ body {
     background-color: #223c5f;
 }
 
-.nav-bar li {
-    padding: 10px 20px;
-    border-right: 1px solid #fa9e64;
-}
 
 .nav-bar li a {
+    display: inline-flex;
+    padding: 10px 20px;
+    border-right: 1px solid #fa9e64;
     color: #fa9e64;
     font-size: 18px;
     text-decoration: none;
+    cursor: pointer;
 }
 
-.nav-bar li#far-left {
-    padding-left: 4rem;
+#far-left {
+    padding-left: 60px;
 }
 
 
