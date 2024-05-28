@@ -19,13 +19,22 @@ body {
     background-color: #223c5f;
 }
 
-
 .title-card h1 {
     display: inline-block;
     padding: 0px;
     margin: 0px;
     color: #fa9e64;
     font-size: 32px;
+}
+
+.icons {
+    float: right;
+    display: flex;
+    gap: 2rem;
+}
+
+.icon img{
+    width: 32px;
 }
 
 .nav-bar {
