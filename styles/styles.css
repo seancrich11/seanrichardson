@@ -15,14 +15,16 @@ body {
 }
 
 .title-card {
+    padding: 20px 5rem;
     background-color: #223c5f;
 }
 
+
 .title-card h1 {
-    padding: 20px 5rem;
+    display: inline-block;
+    padding: 0px;
     margin: 0px;
     color: #fa9e64;
-    border-bottom: 2px solid #fa9e64;
     font-size: 32px;
 }
 
@@ -32,6 +34,7 @@ body {
     padding: 0;
     list-style: none;
     background-color: #223c5f;
+    border-top: 2px solid #fa9e64;
 }
 
 
