@@ -15,7 +15,7 @@ body {
 }
 
 .title-card {
-    padding: 20px 5rem;
+    padding: 16px 5rem;
     background-color: #223c5f;
 }
 
@@ -61,9 +61,23 @@ body {
     padding-left: 60px;
 }
 
-.profile {
+.home-body {
+    display: flex;
+    gap: 11rem;
+    margin-top: 4rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+.profile-pic {
     width: 440px;
     border-radius: 140px;
+}
+
+.body-text h1 {
+    margin: 0;
+    font-size: 220px;
+    color: #e1633d;
 }
 
 
