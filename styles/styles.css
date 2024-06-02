@@ -63,21 +63,39 @@ body {
 
 .home-body {
     display: flex;
-    gap: 11rem;
     margin-top: 4rem;
     margin-left: 5rem;
     margin-right: 5rem;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 }
 
 .profile-pic {
-    width: 440px;
+    flex: 1 1 auto; /* Adjusted to ensure it can shrink and grow */
+    max-width: 450px; /* Set the maximum size for the image */
+    width: 100%; /* Allow the image to shrink proportionally */
     border-radius: 140px;
+}
+
+.body-text {
+    width: 580px;
+    flex-shrink: 1;
+    margin-right: auto;
 }
 
 .body-text h1 {
     margin: 0;
-    font-size: 220px;
     color: #e1633d;
+    font-size: calc(110px + 7vw);
+    cursor: default;
+}
+
+.downward-arrow {
+    display: block;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 6rem;
 }
 
 
