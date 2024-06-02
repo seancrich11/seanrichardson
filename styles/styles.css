@@ -15,22 +15,52 @@ body {
 }
 
 .title-card {
-    padding: 16px 5rem;
+    display: flex;
+    padding: 16px 0;
+    justify-content: flex-start;
+    align-items: center;
     background-color: #223c5f;
+    max-width: auto;
+    flex: 0 1 auto;
+    width: 100%;
+    gap: 4rem;
+}
+
+.logo {
+    display: flex;
+    margin-right: auto;
+    max-width: 348.45px;
+    min-width: 287.53px;
+    flex: 0 1 auto;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.logo a {
+    display: flex;
+    width: 267.53px;
+    text-decoration: none;
 }
 
 .title-card h1 {
-    display: inline-block;
-    padding: 0px;
     margin: 0px;
     color: #fa9e64;
     font-size: 32px;
 }
 
-.icons {
-    float: right;
+.right-side {
     display: flex;
-    gap: 2rem;
+    max-width: 240px;
+    min-width: 120px;
+    width: 100%;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-between;
+    max-width: 180px;
+    width: 100%;
+    padding-right: 20px;
 }
 
 .icon img{
@@ -46,6 +76,10 @@ body {
     border-top: 2px solid #fa9e64;
 }
 
+.nav-bar li {
+    display: flex;
+}
+
 
 .nav-bar li a {
     display: inline-flex;
@@ -58,7 +92,10 @@ body {
 }
 
 #far-left {
-    padding-left: 60px;
+    flex: 1 5 auto;
+    max-width: 148px;
+    width: 100%;
+    justify-content: flex-end;
 }
 
 .home-body {
@@ -79,7 +116,6 @@ body {
 
 .body-text {
     width: 580px;
-    flex-shrink: 1;
     margin-right: auto;
 }
 
