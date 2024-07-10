@@ -6,7 +6,7 @@ html {
 body {
     margin: 0;
     padding: 0;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: "Inter";
     background-color: aliceblue;
 }
 
@@ -15,7 +15,7 @@ body {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    background-color: aliceblue;
+    background-color: #2b5172;
     max-width: auto;
     height: 112px;
     flex: 0 1 auto;
@@ -26,7 +26,7 @@ body {
 .logo {
     display: flex;
     margin-right: auto;
-    max-width: 300px;
+    max-width: 266px;
     min-width: 200px;
     flex: 0 1 auto;
     width: 100%;
@@ -36,6 +36,10 @@ body {
 .logo a {
     display: flex;
     text-decoration: none;
+}
+
+.logo a img {
+    width: 180px;
 }
 
 
@@ -54,119 +58,136 @@ body {
     padding-right: 20px;
 }
 
-.icon img{
+.icon {
+    height: 35px;
     width: 36px;
+    background-size: cover;
+    transition: background-image .2s ease-in-out;
 }
 
-/* Bottom Half Old Nav Bar */
-.nav-bar {
+#linkedin {
+    background-image: url(../img/linkedin.png);
+}
+
+#linkedin:hover {
+    transform: scale(1.1);
+    background-image: url(../img/linkedin-red.png);
+}
+
+#github {
+    background-image: url(../img/github.png);
+}
+
+#github:hover {
+    transform: scale(1.1);
+    background-image: url(../img/github-white.png);
+}
+
+#instagram {
+    background-image: url(../img/instagram.png);
+    height: 36px;
+}
+
+#instagram:hover {
+    transform: scale(1.1);
+    background-image: url(../img/instagram-red.png);
+}
+
+.body-container {
     display: flex;
-    margin: 0;
-    padding-top: 4px;
-    padding-left: 0;
-    list-style: none;
-    background-color: #223c5f;
-    /* border-top: 2px solid #fa9e64; */
-}
-
-.nav-bar li {
-    display: flex;
-    padding: 6px 20px;
-}
-
-
-.nav-bar li a {
-    display: inline-flex;
-    /* border-right: 1px solid #fa9e64; */
-    color: #fa9e64;
-    font-size: 18px;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-#far-left {
-    flex: 1 5 auto;
-    max-width: 149px;
-    width: 100%;
-    justify-content: flex-end;
-}
-
-/* Curvy bottom to nav bar */
-.custom-shape-divider-top-1717895002 {
-    position: absolute;
-    top: 45px;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-}
-
-.custom-shape-divider-top-1717895002 svg {
+    height: 702px;
+    background-color: #000002;
+    justify-content:flex-end;
     position: relative;
-    display: block;
-    width: calc(150% + 1.3px);
-    height: 64px;
-    z-index: -1;
 }
 
-.custom-shape-divider-top-1717895002 .shape-fill {
-    fill: #4e91e9;
+.text-block {
+    margin-left: 84px;
+    margin-top: 64px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+    width: fit-content;
 }
 
-.home-body {
+.fade-in {
+    font-family: Inter;
+    font-size: 44px;
+    animation: fadeIn 3s;
+    /* color: #9cc7fe; */
+    color: aliceblue;
+    font-weight: 100;
+  }
+
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+  .shawn-name {
+    text-decoration: line-through; 
+  }
+
+  .sean {
+    font-weight: 600;
+  }
+
+  .subtitle {
+    color: aliceblue;
+    font-size: 24px;
+    margin-top: 56px;
+    margin-bottom: 80px;
+  }
+
+  .fade-in-a {
+    opacity: 0;
+    transition: opacity 1.5s; /* Adjust the duration as needed */
+    display: block; /* Make sure it’s always in the layout, but initially invisible */
+  }
+
+  .fade-in-visible {
+    opacity: 1;
+  }
+
+  .buttons {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    height: 660px;
-    /* background-color:rgb(218, 233, 240); */
-}
-
-.profile-pic {
-    flex: 1 1 auto; /* Adjusted to ensure it can shrink and grow */
-    max-width: 450px; /* Set the maximum size for the image */
-    width: 100%; /* Allow the image to shrink proportionally */
-    border-radius: 140px;
-}
-
-.body-text {
-    margin: 0px;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    flex: 1;
-
-}
-
-.body-text h1 {
-    margin: 0;
-    color: #e1633d;
-    font-size: calc(30px + 0.32vw);
-    cursor: default;
-    text-align: center;
-}
-
-.downward-arrow {
-    display: block;
-    margin-top: 24px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 6rem;
-}
-
-#bubble-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
+    gap: 80px;
+    justify-content: space-between;
+    max-width: 440px;
+    max-height: 420px;
     height: 100%;
-    overflow: hidden;
-    z-index: -1;
+    width: 100%;
+  }
+
+  .button-a {
+    display: flex;
+    font-size: 18px;
+    background-color: #000002;
+    width: 143px;
+    height: 51px;
+    border-radius: 8px;
+    color: #9cc7fe;
+    justify-content: center;
+    border: 2px solid #2b5172;
+    align-items: center;
+    font-weight:500;
+    text-decoration: none;
 }
 
-.bubble {
-    position: absolute;
-    border-radius: 50%;
-    opacity: 0.8;
-    pointer-events: none;
+.button-a:hover {
+    border: 2px solid aliceblue;
+    color: aliceblue;
+    font-weight: 600;
+    transform: scale(1.1);
+}
+
+  .image {
+    background-image: url(../img/pictures/sean-singing2.jpg);
+    width: 700px;
+    background-size: cover;
+    position: relative;
+    z-index: 0;
+    animation: fadeIn 5s;
 }
