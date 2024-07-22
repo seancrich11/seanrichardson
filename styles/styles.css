@@ -125,11 +125,15 @@ body {
     }
 }
 
+
+
+
+
 /* Body */
 
 .body-container {
     display: flex;
-    height: 702px;
+    height: 720px;
     background-color: #000002;
     justify-content:flex-end;
     position: relative;
@@ -149,7 +153,6 @@ body {
     font-family: Inter;
     font-size: 44px;
     animation: fadeIn 3s;
-    /* color: #9cc7fe; */
     color: aliceblue;
     font-weight: 100;
   }
@@ -225,6 +228,54 @@ body {
     z-index: 0;
     animation: fadeIn 5s;
 }
+
+@media (min-width: 1600px)  {
+    .body-container {
+        height: 840px;
+    }
+
+    .text-block {
+        margin-left: 114px;
+        margin-top: 84px;
+    }
+
+    .fade-in {
+        font-size: 52px;
+    }
+
+    .subtitle {
+        font-size: 32px;
+    }
+
+    .buttons {
+        gap: 100px;
+        max-width: 560px;
+        max-height: 520px;
+    }
+
+    .button-a {
+        font-size: 24px;
+        width: 174px;
+        height: 68px;
+        border-radius: 12px;
+        color: #9cc7fe;
+        border: 3px solid #2b5172;
+    }
+
+    .button-a:hover {
+        border: 3px solid aliceblue;
+    }
+
+    .image {
+        width: 840px;
+    }
+}
+
+
+
+
+
+/* About me */
 
 .about-me {
     display: flex;
