@@ -140,7 +140,7 @@ body {
 }
 
 .text-block {
-    margin-left: 84px;
+    margin-left: 5.9vw;
     margin-top: 64px;
     position: absolute;
     top: 0px;
@@ -233,7 +233,6 @@ body {
     }
 
     .text-block {
-        margin-left: 114px;
         margin-top: 84px;
     }
 
