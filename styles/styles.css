@@ -227,7 +227,7 @@ body {
     animation: fadeIn 5s;
 }
 
-@media (min-width: 1600px)  {
+@media (min-width: 1800px)  {
     .body-container {
         height: 840px;
     }
