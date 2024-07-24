@@ -232,7 +232,7 @@ body {
 
 @media (min-width: 1800px)  {
     .body-container {
-        height: 840px;
+        height: 946px;
     }
 
     .text-block {
@@ -240,23 +240,24 @@ body {
     }
 
     .fade-in {
-        font-size: 52px;
+        font-size: 58px;
     }
 
     .subtitle {
-        font-size: 32px;
+        font-size: 38px;
     }
 
     .buttons {
-        gap: 100px;
-        max-width: 560px;
-        max-height: 520px;
+        row-gap: 110px;
+        column-gap: 106px;
+        max-width: 660px;
+        max-height: 640px;
     }
 
     .button-a {
-        font-size: 24px;
-        width: 174px;
-        height: 68px;
+        font-size: 27px;
+        width: 219px;
+        height: 78px;
         border-radius: 12px;
         color: #9cc7fe;
         border: 3px solid #2b5172;
@@ -267,7 +268,8 @@ body {
     }
 
     .image {
-        width: 840px;
+        width: 900px;
+        height: 100;
     }
 }
 
@@ -366,7 +368,7 @@ body {
     font-size: 48px;
     text-align: center;
     font-weight: 500;
-    margin-bottom: 30px;
+    margin-bottom: 24px;
 }
 
 .text p {
@@ -377,8 +379,8 @@ body {
 
 @media (min-width: 1600px) {
     .text h1 {
-        font-size: 64px;
-        margin-bottom: 36px;
+        font-size: 56px;
+        margin-bottom: 28px;
     }
 
     .text p {
