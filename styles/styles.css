@@ -457,7 +457,6 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: fit-content;
     width: 84%;
     gap: 6rem;
 }
