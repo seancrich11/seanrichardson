@@ -10,8 +10,19 @@
 </head>
 <body>
     <section class="title-card">
-        <div class="logo">
-            <a href="index.html"><img src="img/personal-logo.png" alt="logo"></a>
+        <div class="left-side">
+            <div id="mySidepanel" class="sidepanel">
+                <a href="pages/code.html">Code</a>
+                <a href="pages/resume.html">Resume</a>
+                <a href="pages/music.html">Music</a>
+                <a href="pages/video.html">Video</a>
+                <a href="pages/sport.html">Sport</a>
+                <a href="pages/design.html">Design</a>
+            </div>
+            <div id="hamburger" onclick="toggleNav()"></div>
+            <div class="logo">
+                <a href="index.html"><img src="img/personal-logo.png" alt="logo"></a>
+            </div>
         </div>
         <div class="right-side">
             <div class="icons">
@@ -24,7 +35,9 @@
             </div>
         </div>
     </section>
-    <section class="body-container">
+    <div id="overlay"></div>
+    <div class="extra-body">
+        <section class="body-container">
         <div class="text-block">
             <div class="fade-in">
                 Hey there, I'm <span class="shawn-name">Shawn</span>, <span class="shawn-name">Shaun</span>, <span class="sean">Sean</span>
@@ -40,27 +53,28 @@
             </div>
         </div>
         <div class="image"></div>
-    </section>
-    <section class="about-me">
-        <div class="content">
-            <img src="img/pictures/sean-portrait.jpg" alt="sean">
-            <div class="text">
-                <h1 class="header">About Me</h1>
-                <p>
-                    I am a senior at Vanderbilt University studying economics and computer science. When I'm not in the classroom, you can find me playing just about any sport, trying new foods across Nashville, or singing songs with my acapella group, Harmonic Notion. I was born and raised in Ohio, and I will proudly shout "O-H!" into a crowd of strangers to hear an "I-O!" echo back. In spite of this pride in my home state, I take every possible opportunity to travel the country (especially to Vanderbilt football games).
-                </p>
-                <p>
-                    I am absolutely fascinated by the connections we make with others. I try to approach every day with the intention of meeting a new person and learning a new thing. Everyone has interests and unique experiences to learn from, and I love exploring these spaces through genuine conversation. After graduation, I plan to channel this passion into collaborative work developing technical solutions for clients.
-                </p>
+        </section>
+        <section class="about-me">
+            <div class="content">
+                <img src="img/pictures/sean-portrait.jpg" alt="sean">
+                <div class="text">
+                    <h1 class="header">About Me</h1>
+                    <p>
+                        I am a senior at Vanderbilt University studying economics and computer science. When I'm not in the classroom, you can find me playing just about any sport, trying new foods across Nashville, or singing songs with my acapella group, Harmonic Notion. I was born and raised in Ohio, and I will proudly shout "O-H!" into a crowd of strangers to hear an "I-O!" echo back. In spite of this pride in my home state, I take every possible opportunity to travel the country (especially to Vanderbilt football games).
+                    </p>
+                    <p>
+                        I am absolutely fascinated by the connections we make with others. I try to approach every day with the intention of meeting a new person and learning a new thing. Everyone has interests and unique experiences to learn from, and I love exploring these spaces through genuine conversation. After graduation, I plan to channel this passion into collaborative work developing technical solutions for clients.
+                    </p>
+                </div>
             </div>
-        </div>
-    </section>
-    <section class="footer">
-        <div class="footer-content">
-            <div class="blue-line"></div>
-            <div class="footer-text">Contact: srichardson7556@gmail.com</div>
-        </div>
-    </section>    
+        </section>
+        <section class="footer">
+            <div class="footer-content">
+                <div class="blue-line"></div>
+                <div class="footer-text">Contact: srichardson7556@gmail.com</div>
+            </div>
+        </section>
+    </div>    
     <script src="script.js"></script>
 </body>
 </html>

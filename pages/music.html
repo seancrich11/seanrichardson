@@ -5,12 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About | Sean Richardson</title>
     <link rel="stylesheet" href="../styles/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;600&display=swap" rel="stylesheet">
 
 </head>
 <body>
     <section class="title-card">
-        <div class="logo">
-            <a href="index.html"><img src="../img/personal-logo.png" alt="logo"></a>
+        <div class="left-side">
+            <div id="mySidepanel" class="sidepanel">
+                <a href="code.html">Code</a>
+                <a href="resume.html">Resume</a>
+                <a href="music.html">Music</a>
+                <a href="video.html">Video</a>
+                <a href="sport.html">Sport</a>
+                <a href="design.html">Design</a>
+            </div>
+            <div id="hamburger" onclick="toggleNav()"></div>
+            <div class="logo">
+                <a href="../index.html"><img src="../img/personal-logo.png" alt="logo"></a>
+            </div>
         </div>
         <div class="right-side">
             <div class="icons">
@@ -23,5 +35,30 @@
             </div>
         </div>
     </section>
+    <div id="overlay"></div>
+    <div class="extra-body">
+        <section class="music-body">
+            <div class="music-img"></div>
+            <div class="music-header">Music</div>
+        </section>
+        <section class="music-content-backdrop">
+            <div class="music-content">
+                <div class="music-title">Vocals</div>
+                <div class="spotify-songs">
+                    <iframe style="border-radius:12px" class="song" src="https://open.spotify.com/embed/track/3yysV5VrbAfc3lw9R33Nr7?utm_source=generator&theme=0" width="48%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                    <iframe style="border-radius:12px" class="song" src="https://open.spotify.com/embed/track/4V3y27WTqDiOwWscveQdYW?utm_source=generator&theme=0" width="48%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                </div>
+                <div class="music-title">Arrangement</div>
+                <iframe class="arrangement" width="95%" height="694" src="https://musescore.com/user/34158156/scores/19907632/embed" frameborder="0" allowfullscreen allow="autoplay; fullscreen"></iframe>
+            </div>
+        </section>
+        <section class="footer">
+            <div class="footer-content">
+                <div class="blue-line"></div>
+                <div class="footer-text">Contact: srichardson7556@gmail.com</div>
+            </div>
+        </section>    
+    </div>
+    <script src="../script.js"></script>
 </body>
 </html>

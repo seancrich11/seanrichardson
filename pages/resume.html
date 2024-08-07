@@ -10,8 +10,19 @@
 </head>
 <body>
     <section class="title-card">
-        <div class="logo">
-            <a href="../index.html"><img src="../img/personal-logo.png" alt="logo"></a>
+        <div class="left-side">
+            <div id="mySidepanel" class="sidepanel">
+                <a href="code.html">Code</a>
+                <a href="resume.html">Resume</a>
+                <a href="music.html">Music</a>
+                <a href="video.html">Video</a>
+                <a href="sport.html">Sport</a>
+                <a href="design.html">Design</a>
+            </div>
+            <div id="hamburger" onclick="toggleNav()"></div>
+            <div class="logo">
+                <a href="../index.html"><img src="../img/personal-logo.png" alt="logo"></a>
+            </div>
         </div>
         <div class="right-side">
             <div class="icons">
@@ -24,20 +35,24 @@
             </div>
         </div>
     </section>
-    <section class="body-light">
-        <div class="resume-content">
-            <div class="resume-title">Resume</div>
-            <iframe class="pdf" 
-                src="../pdf/sean-richardson.pdf"
-            width="800" height="500">
-        </iframe>
-        </div>
-    </section>
-    <section class="footer">
-        <div class="footer-content">
-            <div class="blue-line"></div>
-            <div class="footer-text">Contact: srichardson7556@gmail.com</div>
-        </div>
-    </section> 
+    <div id="overlay"></div>
+    <div class="extra-body">
+        <section class="body-light">
+            <div class="resume-content">
+                <div class="resume-title">Resume</div>
+                <iframe class="pdf" 
+                    src="../pdf/sean-richardson.pdf"
+                width="800" height="500">
+            </iframe>
+            </div>
+        </section>
+        <section class="footer">
+            <div class="footer-content">
+                <div class="blue-line"></div>
+                <div class="footer-text">Contact: srichardson7556@gmail.com</div>
+            </div>
+        </section> 
+    </div>
+    <script src="../script.js"></script>
 </body>
 </html>
