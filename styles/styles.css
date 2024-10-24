@@ -845,3 +845,45 @@ body {
     margin: 12px 18px;
 }
 
+@media (min-width: 1600px) {
+    .cube-top {
+        width: 640px;
+        height: 97.4px;
+        border-radius: 41.74px 41.74px 0px 0px;
+        font-size: 28px;
+    }
+
+    .video-cube {
+        width: 640px;
+        height: 402.08px;
+        border-radius: 58.4346px;
+        border: 5px solid #2B5172;
+    }
+
+    .cube-bottom {
+        font-size: 24px;
+        line-height: 56px;
+    }
+
+    .video-row iframe {
+        height: 400px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .video-row {
+        flex-direction: column;
+    }
+
+    #row-flip {
+        flex-direction: column-reverse;
+    }
+
+    .video-row iframe {
+        width: 560px;
+        height: 315px;
+    }
+}
+
+
+
